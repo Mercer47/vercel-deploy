@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from './Header';
+import Sidebar from './Sidebar';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -23,10 +24,14 @@ const Dashboard = () => {
   }
 
   return (
-    <div>
+    <div className="dashboard-container">
       <Header schoolName="Your School Name" userType={user.usertype} />
-      <h1>Dashboard</h1>
-      <p>Welcome to the dashboard!</p>
+      <div className="dashboard-content">
+        <Sidebar userType={user.usertype} />
+        <div className="main-content">
+          {/* Add your main dashboard content here */}
+        </div>
+      </div>
     </div>
   );
 };

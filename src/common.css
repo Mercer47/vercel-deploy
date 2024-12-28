@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 ul#nav {
 	list-style: none;
 	padding: 0;
@@ -239,7 +242,7 @@ ul#nav li{
 .school-name-container {
 	background: #f95555;
 	color: white;
-	font-family: Nunito-Light, serif;
+	font-family: "Nunito", serif;
 	padding: 18px 0 18px 20px;
 	font-size: 30px;
 	text-align: center;

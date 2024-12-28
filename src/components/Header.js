@@ -14,23 +14,25 @@ const Header = ({ schoolName, userType }) => {
 
   return (
     <div className="header-container">
-      <div className="school-logo-container">
-        <img
-          src="/path/to/school-logo.png" // Replace with the actual path to your logo
-          className="school-logo"
-          alt="School Logo"
-        />
+      <div className="row">
+        <div className="col-lg-3 brand-logo-container">
+          <img 
+            src="/logo/skoolizer.png" // Replace with the actual path to your logo
+            className="brand-logo"
+            alt="Skoolizer"
+          />
+        </div>
+        <div className="col-lg-9 school-name-container">
+          <p>
+            <img 
+              src='/logo/logo.png' // Replace with the actual path to your logo
+              className='school-logo'
+              alt='School Logo'
+            />
+            Saraswati Paradise International Public School
+          </p>
+        </div>
       </div>
-      <p className="school-name">
-        {schoolName}
-        <button
-          className="icon-btn"
-          onClick={handleLogout}
-          title="Log Out"
-        >
-          <i className="las la-door-open"></i>
-        </button>
-      </p>
     </div>
   );
 };

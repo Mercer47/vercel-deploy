@@ -1,0 +1,44 @@
+.sidebar-container {
+    background-color: #F95555;
+    height: 1000px;
+}
+
+.accordion-button {
+    background-color: #343a40;
+    color: white;
+    border: none;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color: #007bff;
+    background-color: #343a40;
+  }
+  
+  .accordion-body {
+    padding: 0;
+  }
+  
+  .sidebar-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .sidebar-btn i {
+    margin-right: 10px;
+  }
+  
+  .sidebar-btn:hover {
+    color: #007bff;
+  }
