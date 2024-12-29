@@ -4,18 +4,21 @@
 }
 
 .accordion-button {
-    background-color: #343a40;
-    color: white;
-    border: none;
+    background-color: #F95555 !important;
+    color: #fff !important;
+    border: none !important;
+    outline: none !important;
   }
   
   .accordion-button:focus {
-    box-shadow: none;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
   }
   
   .accordion-button:not(.collapsed) {
-    color: #007bff;
-    background-color: #343a40;
+    color: #F95555;
+    background-color: #F95555;
   }
   
   .accordion-body {
@@ -25,7 +28,7 @@
   .sidebar-btn {
     background: none;
     border: none;
-    color: white;
+    color: #fff !important;
     cursor: pointer;
     font-size: 16px;
     display: flex;
@@ -40,5 +43,18 @@
   }
   
   .sidebar-btn:hover {
-    color: #007bff;
+    color: #fff !important;
+  }
+
+  .accordion-item {
+    background-color: #F95555 !important;
+    border: none !important;
+    color: #fff !important;
+    outline: none !important;
+  }
+
+  .accordion-item:focus {
+    box-shadow: none;
+    border: none !important;
+    outline: none !important;
   }
