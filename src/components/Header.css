@@ -1,0 +1,12 @@
+.logout-btn {
+    background-color: transparent;
+    color: #dc3545;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  .logout-btn:hover {
+    color: #c82333;
+  }

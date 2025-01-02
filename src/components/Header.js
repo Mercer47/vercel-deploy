@@ -1,8 +1,9 @@
-// filepath: /C:/wamp64/www/my-react-app/src/components/Header.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Header.css'; // Assuming you have a CSS file for styling
+import { FaSignOutAlt } from 'react-icons/fa';
 
-const Header = ({ schoolName, userType }) => {
+const Header = ({ schoolName }) => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -29,7 +30,10 @@ const Header = ({ schoolName, userType }) => {
               className='school-logo'
               alt='School Logo'
             />
-            Saraswati Paradise International Public School
+            {schoolName}
+            <button className="logout-btn" onClick={handleLogout}>
+              <FaSignOutAlt />
+            </button>
           </p>
         </div>
       </div>

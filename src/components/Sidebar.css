@@ -16,9 +16,14 @@
     outline: none !important;
   }
   
+  .accordion-button::after {
+    display: none; /* Hide the default down arrow */
+  }
+  
   .accordion-button:not(.collapsed) {
-    color: #F95555;
-    background-color: #F95555;
+    color: #fff !important;
+    background-color: #F95555 !important;
+    border-bottom: 2px solid #fff; /* Add white line under the opened item */
   }
   
   .accordion-body {
@@ -57,4 +62,12 @@
     box-shadow: none;
     border: none !important;
     outline: none !important;
+  }
+
+  .sidebar-icon {
+    margin-right: 10px;
+  }
+  
+  .menu-icon {
+    margin-right: 10px;
   }

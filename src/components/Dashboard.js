@@ -1,8 +1,9 @@
-// filepath: /C:/wamp64/www/my-react-app/src/components/Dashboard.js
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Sidebar from './Sidebar';
+import Create from './student/create';
+import './Sidebar.css';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -25,11 +26,14 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <Header schoolName="Your School Name" userType={user.usertype} />
+      <Header schoolName="Saraswati Paradise International Public School" userType={user.usertype} />
       <div className="dashboard-content">
         <Sidebar userType={user.usertype} />
         <div className="main-content">
-          {/* Add your main dashboard content here */}
+          <Routes>
+            <Route path="create" element={<Create />} />
+            {/* Add more nested routes as needed */}
+          </Routes>
         </div>
       </div>
     </div>
